@@ -65,7 +65,7 @@ export const Registration = () => {
 			</Typography>
 			<div className={styles.avatar}>
 				<Avatar
-					src={image ? `http://localhost:4444${image}` : ""}
+					src={image ? `${process.env.REACT_APP_API_URL}${image}` : ""}
 					sx={{width: 100, height: 100}}
 				/>
 			</div>

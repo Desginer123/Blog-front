@@ -32,9 +32,9 @@ export const TagPage = () => {
 						id={obj._id}
 						title={obj.title}
 						// imageUrl="https://res.cloudinary.com/practicaldev/image/fetch/s--UnAfrEG8--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/icohm5g0axh9wjmu4oc3.png"
-						imageUrl={obj.imageUrl ? `http://localhost:4444${obj.imageUrl}` : ''}
+						imageUrl={obj.imageUrl ? `${process.env.REACT_APP_API_URL}${obj.imageUrl}` : ''}
 						user={{
-							avatarUrl: obj.user.avatarUrl ? `http://localhost:4444${obj.user.avatarUrl}` : '', 
+							avatarUrl: obj.user.avatarUrl ? `${process.env.REACT_APP_API_URL}${obj.user.avatarUrl}` : '', 
 							fullName: obj.user.fullName,
 							}}
 						createdAt={moment(obj.createdAt, moment.HTML5_FMT.DATETIME_LOCAL_MS).format('DD-MM-YYYY HH:mm')}

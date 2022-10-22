@@ -30,9 +30,9 @@ export const FullPost = () => {
       <Post
         id={data.id}
         title={data.title}
-        imageUrl={data.imageUrl ? `http://localhost:4444${data.imageUrl}` : ''}
+        imageUrl={data.imageUrl ? `${process.env.REACT_APP_API_URL}${data.imageUrl}` : ''}
         user={{
-			avatarUrl: data.user.avatarUrl ? `http://localhost:4444${data.user.avatarUrl}` : '', 
+			avatarUrl: data.user.avatarUrl ? `${process.env.REACT_APP_API_URL}${data.user.avatarUrl}` : '', 
 			fullName: data.user.fullName,
 		  }}
 		createdAt={moment(data.createdAt, moment.HTML5_FMT.DATETIME_LOCAL_MS).format('DD-MM-YYYY HH:mm')}
