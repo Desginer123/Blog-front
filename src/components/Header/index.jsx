@@ -19,7 +19,7 @@ const onClickLogout = () => {
       <Container maxWidth="lg">
         <div className={styles.inner}>
           <Link className={styles.logo} to="/">
-            <div>BIRD BLOG</div>
+            <div>BLOG</div>
           </Link>
           <div className={styles.buttons}>
 			{isAuth ? (
