@@ -34,7 +34,6 @@ const onClickLogout = () => {
 					<Link to='/register'><Button variant="contained">Создать аккаунт</Button></Link>
 				</>
 			)}
-           p.className
           </div>
         </div>
       </Container>
