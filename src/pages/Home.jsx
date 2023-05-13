@@ -21,12 +21,12 @@ export const Home = () => {
 	const {comments} = useSelector((state) => state.comments)
 	const [currentSort, setCurrentSort] = React.useState(0)
 	const userData = useSelector((state) => state.auth.data)
-	const isPostsLoading = posts.status === 'loading'
-	const isCommentsLoading = comments.status === 'loading'
+	const isPostsLoading = posts.status === "loading"
+	const isCommentsLoading = comments.status === "loading"
 
-	const isPopularPostsLoading = popularPosts.status === 'loading'
+	const isPopularPostsLoading = popularPosts.status === "loading"
 
-	const isTagsLoading = tags.status === 'loading'
+	const isTagsLoading = tags.status === "loading"
 
 	return (
 		<>
